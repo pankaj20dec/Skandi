@@ -1,0 +1,507 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.eot?") format("eot"), url("fonts/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url('fonts/Montserrat-Regular.svg#str-replace(Montserrat, " ", "_")') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Light.eot?") format("eot"), url("fonts/Montserrat-Light.woff2") format("woff2"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url('fonts/Montserrat-Light.svg#str-replace(Montserrat, " ", "_")') format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Black.eot?") format("eot"), url("fonts/Montserrat-Black.woff2") format("woff2"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url('fonts/Montserrat-Black.svg#str-replace(Montserrat, " ", "_")') format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("fonts/Museo700-Regular.eot?") format("eot"), url("fonts/Museo700-Regular.woff2") format("woff2"), url("fonts/Museo700-Regular.woff") format("woff"), url("fonts/Museo700-Regular.ttf") format("truetype"), url('fonts/Museo700-Regular.svg#str-replace(Museo, " ", "_")') format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+strong {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2 {
+  font-family: Museo;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 -5px 0;
+  position: relative;
+  z-index: 1;
+}
+
+h3 {
+  font-family: Museo;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 25px 0 0 0;
+  margin: 0 0 15px 0;
+  line-height: 1;
+  text-align: center;
+}
+
+h6 {
+  margin: 0;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-default, .link-button {
+  background-color: transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  color: #000000;
+  border: 1px solid;
+  border-radius: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 140px;
+  padding: 8px 12px;
+  font-size: 10px;
+}
+.btn-default:hover, .link-button:hover {
+  background-color: transparent;
+  border: 1px solid;
+  color: #000000;
+}
+
+.link-button {
+  margin: 55px auto 0;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.form-control {
+  font-family: Montserrat;
+  font-style: normal;
+  color: #000000;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: #fff;
+  width: 240px !important;
+  height: 32px;
+  letter-spacing: 2px;
+}
+
+.form-control::-moz-placeholder {
+  color: #000000;
+}
+.form-control:-webkit-placeholder {
+  color: #000000;
+}
+.form-control:-ms-placeholder {
+  color: #000000;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 125px;
+}
+
+.home-intro .header-banner {
+  width: 80%;
+  float: left;
+  background-size: cover !important;
+  position: relative;
+}
+.home-intro .home-logo {
+  margin-top: -100px;
+  position: absolute;
+  right: -165px;
+  top: 50%;
+}
+.home-intro .home-logo .home-intro-text {
+  text-align: center;
+}
+.home-intro .home-logo .home-intro-text .hlogo {
+  padding: 20px 0 60px 0;
+}
+.home-intro .home-logo .home-intro-text .sub-heading {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+header #header {
+  line-height: 70px;
+  background: #fff;
+  position: relative;
+}
+header #header .navbar .navigation ul {
+  float: right;
+}
+header #header .navbar .navigation ul li {
+  display: inline-block;
+  margin-right: 65px;
+}
+header #header .navbar .navigation ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+header #header .navbar .navigation ul li a:hover:before {
+  background: #000 none repeat scroll 0 0;
+  bottom: -10px;
+  content: "";
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 28px;
+}
+header #header .navbar-default {
+  border: none;
+  background: #fff;
+  margin-bottom: 0;
+}
+header .logo {
+  padding: 35px 80px 50px 0;
+  float: right;
+}
+
+li.active a:before {
+  background: #000 none repeat scroll 0 0;
+  bottom: -10px;
+  content: "";
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 28px;
+}
+
+.main-container {
+  background: #f7f7f9;
+}
+.main-container .homepage {
+  padding-top: 50px;
+}
+.main-container .homepage .about .about-content {
+  background: #fff;
+  padding: 30px;
+  line-height: 4;
+  letter-spacing: 2px;
+}
+.main-container .homepage .about .link-button {
+  float: right;
+  margin: -18px auto 0;
+}
+.main-container .homepage .home-philoshophy .col-md-5 {
+  padding-right: 0;
+}
+.main-container .homepage .home-philoshophy .col-md-5 .philoshophy-content {
+  margin-top: 350px;
+}
+.main-container .homepage .home-philoshophy .col-md-7 {
+  padding-left: 0;
+}
+.main-container .homepage .home-philoshophy .col-md-7 .philoshophy-content-second {
+  padding-left: 30px;
+}
+.main-container .homepage .home-philoshophy p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.featured-products .slider {
+  position: relative;
+}
+.featured-products .slider .product {
+  margin: 0 10px;
+}
+.product-details {
+  margin-top: 25px;
+  position: relative;
+}
+.product-details:before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.featured-products .slider .prev, .featured-products .slider .next {
+  font-size: 25px;
+  left: -15px;
+  line-height: 1;
+  margin-top: -70px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.featured-products .slider .next {
+  right: -15px;
+  left: auto;
+}
+.latest-blog .blog-box {
+  letter-spacing: 2px;
+  background: #fff;
+  line-height: 2;
+  margin: 0 10px;
+}
+.latest-blog .blog-box img {
+  width: 100%;
+}
+.latest-blog .blog-box .blog-text {
+  padding: 15px;
+}
+.latest-blog .blog-box .blog-text h5 {
+  text-align: left;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+.latest-blog .blog-box .blog-text .blog-read-more {
+  float: right;
+  line-height: 1;
+}
+
+.page {
+  letter-spacing: 3px;
+  line-height: 2.1;
+  padding: 70px 0;
+}
+.short-description, .page-content {
+  background: #fff none repeat scroll 0 0;
+  padding: 35px;
+}
+.page-content {
+  margin-top: 35px;
+}
+
+.contact-grid {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.contact-grid .contact-form {
+  margin: 45px 0;
+  padding-left: 50px;
+}
+.contact-grid .contact-form .navbar-form {
+  margin-left: -200px;
+  margin-right: 140px;
+  margin-top: 30px;
+}
+.contact-grid .contact-form .navbar-form button {
+  float: right;
+}
+.contact-grid .contact-form textarea {
+  height: 190px !important;
+  resize: none;
+}
+.contact-grid .navbar-form .form-group {
+  width: 100%;
+}
+.contact-grid .navbar-form .form-group .form-control {
+  height: 45px;
+  margin-bottom: 20px;
+  width: 100% !important;
+}
+.contact-grid .newsletter-form {
+  padding: 55px 0 150px 0;
+  margin: 0 140px 0 -200px;
+}
+
+.our-philosophy .page-content {
+  padding: 135px 0 70px 0;
+  background: transparent;
+}
+.our-philosophy .page-content p {
+  background-color: #fff;
+  padding: 35px;
+}
+.our-philosophy .page-content h2 {
+  margin-top: 60px;
+}
+.our-philosophy .page-content img {
+  margin-bottom: 20px;
+}
+
+.content-area {
+  padding: 70px 0 70px 0;
+  letter-spacing: 3px;
+  line-height: 2.1;
+}
+.content-area .listing {
+  padding-top: 120px;
+}
+.content-area .listing .listing-box {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+.content-area .listing .listing-box .content-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 348px;
+  padding-right: 30px;
+}
+.content-area .listing .listing-box .content-box .contents {
+  align-self: flex-end;
+}
+.content-area .listing .listing-box .content-box .contents h5 {
+  text-align: left;
+  margin-bottom: 45px;
+}
+.content-area .listing .listing-box .content-box .contents .link-button {
+  width: 110px;
+  margin: 30px 0 0 0;
+}
+.content-area .listing-page {
+  padding-top: 35px;
+}
+.content-area .listing-page .box, .content-area .listing-page .grid-sizer {
+  background: #fff;
+  padding: 35px;
+  width: 48%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.content-area .listing-page h5 {
+  text-align: left;
+}
+
+#footer {
+  background-color: #dbdbdb;
+}
+#footer .subscribe-form {
+  padding: 55px 0 50px 0;
+}
+#footer .subscribe-form h4 {
+  float: left;
+  color: #fff;
+  margin: 0;
+  line-height: 32px;
+  letter-spacing: 4px;
+}
+#footer .subscribe-form .navbar-form {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#footer .subscribe-form .navbar-form .form-control {
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-right: 6px;
+}
+#footer .subscribe-form .navbar-form .form-control:last-child {
+  margin-right: 12px;
+}
+#footer .subscribe-form .navbar-form .btn-default, #footer .subscribe-form .navbar-form .link-button {
+  width: 110px;
+}
+#footer .social-icons {
+  text-align: center;
+}
+#footer .social-icons ul li {
+  display: inline-block;
+}
+#footer .social-icons ul li a {
+  color: #fff;
+}
+#footer .footer-menus {
+  line-height: 70px;
+}
+#footer .footer-menus ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#footer .footer-menus ul li a {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+#footer .footer-menus ul li:last-child {
+  margin-right: 0;
+}
+#footer .credit {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+#footer .credit .copyright {
+  float: left;
+}
+#footer .credit .company-name {
+  float: right;
+}
