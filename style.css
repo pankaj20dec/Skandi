@@ -165,6 +165,7 @@ img {
 .container {
   max-width: 990px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section {
@@ -333,6 +334,28 @@ li.active a:before {
   float: right;
   line-height: 1;
 }
+.latest-blog .slider-container {
+  position: relative;
+}
+.latest-blog .slider-container .arrows {
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  cursor: pointer;
+  width: 100%;
+  margin-top: -30px;
+}
+.latest-blog .slider-container .arrows .blog-prev, .latest-blog .slider-container .arrows .blog-next {
+  background: #f7f7f9 none repeat scroll 0 0;
+  font-size: 40px;
+  left: 0;
+  padding: 0 20px 2px;
+  position: absolute;
+}
+.latest-blog .slider-container .arrows .blog-next {
+  left: auto;
+  right: 0;
+}
 
 .page {
   letter-spacing: 3px;
@@ -438,6 +461,83 @@ li.active a:before {
 }
 .content-area .listing-page h5 {
   text-align: left;
+}
+
+.blog-page .latest-blog {
+  padding-top: 45px;
+}
+.blog-page .categories {
+  top: 35px;
+}
+.categories {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  transform-origin: 0 0 0;
+  margin: 0 -95px 0 -5px;
+  z-index: 2;
+}
+.categories li {
+  display: inline-block;
+  margin: 0 30px;
+  text-transform: uppercase;
+}
+.categories li:first-child {
+  margin-left: 0;
+}
+.categories li:last-child {
+  margin-right: 0;
+}
+.categories li:last-child::after {
+  content: "";
+}
+.categories li::after {
+  content: ".";
+  font-size: 24px;
+  padding-left: 30px;
+  position: absolute;
+  top: -18px;
+}
+
+.listing-page .blog-box {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+.listing-page .row .col-md-4 {
+  padding: 0 10px;
+}
+.listing-page .row .col-md-4:first-child {
+  padding-left: 15px;
+}
+.listing-page .row .col-md-4:last-child {
+  padding-right: 15px;
+}
+
+.detail .col-md-5 {
+  padding: 0;
+}
+.detail .col-md-5 .blog-details .blog-title {
+  border-bottom: 3px solid #000;
+}
+.detail .col-md-5 .blog-details .author-cat {
+  background: #fff none repeat scroll 0 0;
+}
+.detail .col-md-5 .blog-details .author-cat li {
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+}
+.detail .col-md-5 .blog-details .author-cat li:last-child::after {
+  content: "";
+}
+.detail .col-md-5 .blog-details .author-cat li::after {
+  content: ".";
+  font-size: 24px;
+  padding-left: 10px;
+  position: absolute;
+  top: -8px;
 }
 
 #footer {

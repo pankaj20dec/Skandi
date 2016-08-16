@@ -136,6 +136,7 @@ img{
 .container{
 	max-width: 990px;
 	margin: 0 auto;
+	position: relative;
 }
 .section{
 	padding-bottom: 125px;
@@ -214,19 +215,20 @@ img{
 	li.active{
 		a{
 			&:before{
-			background: #000 none repeat scroll 0 0;
-			bottom: -10px;
-			content: "";
-			height: 3px;
-			left: 0;
-			margin: 0 auto;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			width: 28px;
-		}	
-	}
-  }	
+				background: #000 none repeat scroll 0 0;
+				bottom: -10px;
+				content: "";
+				height: 3px;
+				left: 0;
+				margin: 0 auto;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				width: 28px;
+			}	
+		}
+	}	
+	
 // Homepage
 .main-container{
 	background: #f7f7f9;
@@ -322,10 +324,36 @@ img{
 						line-height: 1;
 					}
 				}
-			}	
+			}
+		  .slider-container{
+			  position: relative;
+					.arrows{
+						position: absolute;
+						top: 40%;
+						z-index: 2;
+						cursor: pointer;
+						width: 100%;
+						margin-top: -30px;
+							.blog-prev{
+								background: #f7f7f9 none repeat scroll 0 0;
+								font-size: 40px;
+								left: 0;
+								padding: 0 20px 2px;
+								position: absolute;	
+							}
+							.blog-next{
+								@extend .blog-prev;
+								left: auto;
+								right: 0;
+							}
+						}
+					}			
+				}
+			}
 		}
-  }
-}
+
+
+
 .page {
     letter-spacing: 3px;
     line-height: 2.1;
@@ -438,8 +466,98 @@ img{
 				}
 			}    
 
+			
+// Blog Page
+.blog-page{
+	.latest-blog{
+		padding-top: 45px;
+	}
+	.categories {
+		top: 35px;
+	}
+	@at-root .categories {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		transform: rotate(90deg);
+		transform-origin: 0 0 0;
+		margin: 0 -95px 0 -5px;
+		z-index: 2;
+			li{
+				display: inline-block;
+				margin: 0 30px;
+				text-transform: uppercase;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				  &::after {
+					content: "";
+				  }
+			}
+			&::after {
+				content: ".";
+				font-size: 24px;
+				padding-left: 30px;
+				position: absolute;
+				top: -18px;
+			}
+		}
+
+	}	
+}	
 	
+.listing-page {
+	.blog-box {
+		background-color: #fff;
+		margin-bottom: 20px;
+		padding: 12px;
+	}
+	.row{
+		.col-md-4{
+			padding: 0 10px;
+			&:first-child{
+				padding-left: 15px;
+			}
+			&:last-child{
+				padding-right: 15px;
+			}
+		}
+	}	
+}		
+.detail {
+	.col-md-5 {
+		padding: 0;
 	
+.blog-details{
+	.blog-title{
+		border-bottom: 3px solid #000;
+		}
+		.author-cat {
+				background: #fff none repeat scroll 0 0;
+				li{
+					padding: 10px;
+					position: relative;
+					display: inline-block;
+					&:last-child{
+						&::after {
+							content: "";
+						}
+					}
+					&::after {
+						content: ".";
+						font-size: 24px;
+						padding-left: 10px;
+						position: absolute;
+						top: -8px;
+					}
+				}
+			}
+		}
+	}	
+}
+
 	
 	
 //Footer	
