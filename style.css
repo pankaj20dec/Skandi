@@ -90,6 +90,7 @@ h6 {
   font-size: 12px;
   font-family: Montserrat;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 img {
@@ -151,8 +152,15 @@ img {
 }
 
 .flex-container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -193,15 +201,15 @@ img {
 .home-intro .home-logo .home-intro-text .sub-heading {
   font-size: 12px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 header #header {
   line-height: 70px;
   background: #fff;
   position: relative;
-}
-header #header .navbar .navigation ul {
-  float: right;
+  max-width: 1230px;
+  margin: 0 auto;
 }
 header #header .navbar .navigation ul li {
   display: inline-block;
@@ -224,6 +232,9 @@ header #header .navbar .navigation ul li a:hover:before {
   text-align: center;
   width: 28px;
 }
+header #header .navbar .navigation ul li:last-child {
+  margin-right: 0;
+}
 header #header .navbar-default {
   border: none;
   background: #fff;
@@ -245,6 +256,16 @@ li.active a:before {
   right: 0;
   text-align: center;
   width: 28px;
+}
+
+.header-social-icons {
+  float: left;
+  margin-right: 50px;
+}
+.header-social-icons li {
+  display: inline;
+  font-size: 18px;
+  margin-right: 5px;
 }
 
 .main-container {
@@ -373,6 +394,7 @@ li.active a:before {
 .contact-grid {
   max-width: 1060px;
   margin: 0 auto;
+  position: relative;
 }
 .contact-grid .contact-form {
   margin: 45px 0;
@@ -463,6 +485,7 @@ li.active a:before {
   text-align: left;
 }
 
+/**** Blog Page  ***/
 .blog-page .latest-blog {
   padding-top: 45px;
 }
@@ -515,13 +538,34 @@ li.active a:before {
   padding-right: 15px;
 }
 
+.detail .post-image {
+  margin-right: -50px;
+  padding-left: 50px;
+}
 .detail .col-md-5 {
   padding: 0;
 }
+.detail .col-md-5 .blog-details {
+  min-height: 700px;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
 .detail .col-md-5 .blog-details .blog-title {
   border-bottom: 3px solid #000;
+  margin-top: 100px;
 }
 .detail .col-md-5 .blog-details .author-cat {
+  align-self: flex-end;
+  margin-bottom: 35px;
   background: #fff none repeat scroll 0 0;
 }
 .detail .col-md-5 .blog-details .author-cat li {
